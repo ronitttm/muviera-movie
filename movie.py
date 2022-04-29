@@ -29,7 +29,7 @@ st.markdown("""
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link disabled" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link disabled" href="http://127.0.0.1:8000/recommendation/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://share.streamlit.io/ronitttm/muviera-music/main/music.py" target="_blank">Music</a>
