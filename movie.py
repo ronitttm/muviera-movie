@@ -22,7 +22,7 @@ st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootst
 
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #d85f25;">
-  <a class="navbar-brand" href="http://127.0.0.1:8000" target="_blank"></a>
+  <a class="navbar-brand" href="http://127.0.0.1:8000/" target="_blank"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
