@@ -65,7 +65,7 @@ def recommend(movie):
     return recommended_movie_names,recommended_movie_posters
 
 
-st.title('MuviEra-A Recommendation System')
+st.title('Movie Recommendation System')
 movies = pickle.load(open('movies.pkl','rb'))
 ifile = bz2.BZ2File("similarity_index.pkl",'rb')
 similarity = pickle.load(ifile)
