@@ -22,21 +22,13 @@ st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootst
 
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #d85f25;">
-  <a class="navbar-brand" href="http://127.0.0.1:8000/" target="_blank"></a>
+  <a class="navbar-brand" href="http://127.0.0.1:8000/muviera" target="_blank"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link disabled" href="http://127.0.0.1:8000/recommendation/">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://share.streamlit.io/ronitttm/muviera-music/main/music.py" target="_blank">Music</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://127.0.0.1:8000/feedback/" target="_blank">Feedback</a>
-      </li>
+Content Based Movie Recommendation System
     </ul>
   </div>
 </nav>
@@ -145,6 +137,7 @@ if st.button("Next"):
     with col8:
         st.text(recommended_movie_names[15])
         st.image(recommended_movie_posters[15])
+
 
 
 
