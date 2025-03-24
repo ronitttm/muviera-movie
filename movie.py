@@ -28,15 +28,7 @@ st.markdown("""
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link disabled" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://share.streamlit.io/ronitttm/muviera-music/main/main.py" target="_blank">Music</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://127.0.0.1:8000/muviera/feedback/" target="_blank">Feedback</a>
-      </li>
+Content Based Movie Recommendation System
     </ul>
   </div>
 </nav>
@@ -73,7 +65,7 @@ def recommend(movie):
     return recommended_movie_names,recommended_movie_posters
 
 
-st.title('MuviEra-A Recommendation System')
+st.title('Movie Recommendation System')
 movies = pickle.load(open('movies.pkl','rb'))
 ifile = bz2.BZ2File("similarity_index.pkl",'rb')
 similarity = pickle.load(ifile)
