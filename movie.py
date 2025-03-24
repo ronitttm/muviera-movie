@@ -22,13 +22,15 @@ st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootst
 
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #d85f25;">
-  <a class="navbar-brand" href="http://127.0.0.1:8000/muviera" target="_blank"></a>
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-Content Based Movie Recommendation System
+      <li class="nav-item">
+        <a class="nav-link" href="https://muviera-music.streamlit.app/" target="_blank"> <b>Music Recommendation</a>
+      </li>
     </ul>
   </div>
 </nav>
@@ -65,7 +67,7 @@ def recommend(movie):
     return recommended_movie_names,recommended_movie_posters
 
 
-st.title('Movie Recommendation System')
+st.title('MuviEra - A Recommendation System for Movies 🎬📽️ and Music 🎧🎵' )
 movies = pickle.load(open('movies.pkl','rb'))
 ifile = bz2.BZ2File("similarity_index.pkl",'rb')
 similarity = pickle.load(ifile)
@@ -80,7 +82,7 @@ st.write('You selected:', selected_movie)
 
 if st.button('Show Recommendation'):                                                           
     with st_lottie_spinner(lottie_wait, key='wait'):
-        time.sleep(4)
+        time.sleep(3)
     recommended_movie_names,recommended_movie_posters = recommend(selected_movie)
     col1, col2, col3, col4, col5 , col6, col7, col8 =  st.columns(8)
     with col1:
@@ -110,7 +112,7 @@ if st.button('Show Recommendation'):
 
 if st.button("Next"):
     with st_lottie_spinner(lottie_wait, key='wait'):
-        time.sleep(4)
+        time.sleep(3)
     recommended_movie_names,recommended_movie_posters = recommend(selected_movie)
     col1, col2, col3, col4, col5 , col6, col7, col8 =  st.columns(8)
     with col1:
