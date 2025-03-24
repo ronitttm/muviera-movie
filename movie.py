@@ -5,6 +5,7 @@ import streamlit as st
 from streamlit_lottie import st_lottie_spinner
 import requests
 import bz2
+import pandas as pd
 
 img = Image.open('watching-a-movie.png')
 st.set_page_config(page_title='MuviEra',layout='wide',page_icon=img)
@@ -68,7 +69,7 @@ def recommend(movie):
 
 
 st.title('MuviEra - A Recommendation System for Movies 🎬📽️ and Music 🎧🎵' )
-movies = pickle.load(open('movies.pkl','rb'))
+movies = pd.read_pickle("movies.pkl")
 ifile = bz2.BZ2File("similarity_index.pkl",'rb')
 similarity = pickle.load(ifile)
 
