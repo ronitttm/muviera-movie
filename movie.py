@@ -30,12 +30,12 @@ st.markdown("""
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="https://muviera-music.streamlit.app/" target="_blank"> <b>Music Recommendation</a>
+        <a class="nav-link" href="https://muviera-music.streamlit.app/" target="_blank"> <b>For Music Recommendations, Click here!</a>
       </li>
     </ul>
   </div>
 </nav>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True) 
 
 def loadgifs(url : str ):
     r = requests.get(url)
